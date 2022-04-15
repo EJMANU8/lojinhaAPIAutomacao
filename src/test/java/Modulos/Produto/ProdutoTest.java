@@ -1,14 +1,10 @@
 package Modulos.Produto;
 
-
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
-
 
 @DisplayName("Testes de API Rest do modulo de Producto")
 public class ProdutoTest {
@@ -17,7 +13,6 @@ public class ProdutoTest {
     public void testValidarLimitesProibidosValorProduto() {
      // Configurando os dados da API rest da lojinha
         baseURI = "http://165.227.93.41";
-       // port = 8080
         basePath = "/lojinha";
 
     //  Obter o token do usuario admin
